@@ -1,0 +1,76 @@
+VIM MODES:
+- INSERT MODE => standard coding
+    - "i" (insert before char), 
+    - "a" (insert after char) 
+- NORMAL MODE => motions
+    - "esc"
+    - "Ctrl c"
+    - "Ctrl ["
+- COMMAND MODE => commands (save, uppercase, lowercase, quit, macros, etc.)
+    - ":" 
+- VISUAL MODE => highlighting
+    - "v" (character-mode),
+    - "V" (line-mode), 
+    - "ctrl-v" (block-mode), 
+    - "gv"
+
+Motions (NORMAL)
+
+- w => word (forward)
+- b => back (word)
+- hjkl => like arrow keys
+- can use numbers before for repetition
+- can mix with copy-paste (y 5 k)
+- _ => to the beginning (non-empty char)
+- $ => to the end
+- 0 => to the beginning (empty char)
+
+Commands (NORMAL)
+
+- "y" => yank (copy)
+- "d" => delete (cut)
+- "p" => put (paste)
+- "u" => undo
+
+Commands (COMMAND)
+operators:
+u        " lowercase
+U        " uppercase
+d        " delete
+c        " change
+y        " yank
+>        " indent
+<        " dedent
+
+:h visual-operators
+
+
+NOTES:
+Copy/Cut-Paste
+https://www.warp.dev/terminus/vim-copy-paste
+
+Fundamentals:
+- Y stands for “yank” in Vim, which is conceptually similar to copying.
+- D stands for “delete” in Vim, which is conceptually similar to cutting.
+- P stands for “put” in Vim, which is conceptually similar to pasting.
+
+Copying (Yanking)
+- yy: Copy the current line in vi
+- 3yy: To yank multiple lines in vim, type in the number of lines followed by yy. This command will copy (yank) 3 lines starting from your cursor position.
+- y$: Copy everything from the cursor to the end of the line
+- y^: Copy everything from the start of the line to the cursor.
+- yiw: Copy the current word.
+Cutting (Deleting)
+- dd: Cut the current line
+- 3dd: Cut 3 lines, starting from the cursor
+- d$: Cut everything from the cursor to the end of the line
+Putting (Pasting)
+- P (uppercase): Paste before your cursor
+- p (lowercase): Paste after your cursor
+
+6YP
+yyp
+3yyp
+
+DP
+ddp

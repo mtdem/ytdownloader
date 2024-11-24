@@ -1,0 +1,27 @@
+TODO to build the app:
+
+1. find a way to access the stream from yt (hard part)
+2. convert yt stream to file format
+3. download yt stream to file format
+
+YOUTUBE LINKS:
+
+0.vid: 
+    domain: https://www.youtube.com
+    endpoint: /watch?
+    parameters:
+        - v=XtNq9qJvRko&
+        - ab_channel=FERHATCANATAN
+1. vid inside playlist: 
+    domain: https://www.youtube.com
+    endpoint: /watch?
+    parameters: 
+        - v=N4-Sk506pgA
+        - list=PLWU88pbzc3rPvIxav73bo9I7qJWUQYzgs
+        - index=4
+        - ab_channel=victorpardo
+2. playlist: 
+    domain: https://www.youtube.com
+    endpoint: /playlist?
+    parameters:
+        - list=PLWU88pbzc3rPvIxav73bo9I7qJWUQYzgs
